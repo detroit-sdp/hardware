@@ -8,3 +8,7 @@ lift_test: lift_test.cpp Makefile
 
 quant: lift_quant_analysis.cpp Makefile 
 	$(CXX) $(CXXFLAGS) -o $@ $<
+
+speed: lift_speed_analysis.cpp Makefile 
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
