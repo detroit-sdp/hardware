@@ -5,3 +5,6 @@ CXXFLAGS=-std=gnu++17 -O3 ${CXXCFLAGS}
 
 lift_test: lift_test.cpp Makefile 
 	$(CXX) $(CXXFLAGS) -o $@ $<
+
+quant: lift_quant_analysis.cpp Makefile 
+	$(CXX) $(CXXFLAGS) -o $@ $<
